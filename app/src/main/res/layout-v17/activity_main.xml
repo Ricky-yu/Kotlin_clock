@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="0dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="327dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginLeft="111dp"
+        android:layout_marginRight="114dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="92dp"
+        android:textSize="64sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="10:10" />
+
+    <TextView
+        android:id="@+id/timeZone"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:text="日本標準時間"
+        app:layout_constraintBottom_toTopOf="@+id/textClock"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/clockList"
+        android:layout_width="368dp"
+        android:layout_height="311dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textClock">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="444dp"
+        android:text="追加する"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
